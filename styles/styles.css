@@ -1,12 +1,10 @@
-/* General */
+
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
     background-color: #f9f9f9;
-    color: #333;
+    color: #312d2d;
 }
-
-/* Header */
 header {
     background-color: #004d99;
     color: white;
@@ -22,9 +20,10 @@ header h1 {
 header p {
     margin-top: 10px;
     font-size: 1.1em;
+    color: rgb(41, 40, 40);
 }
 
-/* Table */
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -47,13 +46,13 @@ tbody tr:nth-child(even) {
     background-color: #f2f2f2;
 }
 
-/* Divider */
+
 p {
     text-align: center;
     color: #888;
 }
 
-/* Formulario */
+
 footer {
     background-color: #e0e0e0;
     padding: 20px;

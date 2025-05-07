@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda de Videojuegos</title>
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
     <header>
@@ -20,14 +21,14 @@
     <main>
         <section id="catalogo">
             <h2>Catálogo de Productos</h2>
-            <article>
+            <article id="fifa">
                 <h3>Juego 1: fifa 25</h3>
                 <p>Una experiencia llena de futbol. Plataforma: PC, Consola.</p>
-                <img src="https://www.clarin.com/2024/07/17/ORRRfEnDj_2000x1500__1.jpg" alt="fifa" width="350" height="300">
+                <img src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2024/07/portada-sencilla-ea-fc-25-3747994.jpg?tf=1200x1200" alt="fifa" width="350" height="350">
                 <p>Precio: $49.99</p>
 
             </article>
-            <article>
+            <article id="call">
                 <h3>Juego 2: call of duty black of 2</h3>
                 <p>vive la mejor experiencia en call of duty black of 2 . Plataforma: PC, Consola.</p>
                 <img src="https://m.media-amazon.com/images/I/713BeVwKS4L._AC_UF1000,1000_QL80_.jpg" alt="call of duty" width="350" height="350">
@@ -42,10 +43,20 @@
     </main>
     <footer id="contacto">
         <h2>Contacto</h2>
-        <form action="">
-            <input type="text" placeholder="Nombre" required>
-            <input type="email" placeholder="Correo" required>
-            <input type="submit" value="Enviar">
+        <form action="/enviar" method="POST">
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <input type="reset" value="Enviar">
+        </form>
+        <form action="/enviar" method="POST">
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            <input type="reset" value="Enviar">
+        </form>
+        <form>
+            <label for="comentarios">Comentarios:</label>
+            <textarea id="comentarios" name="comentarios" rows="4" cols="35" maxlength="200"></textarea>
+            <button type="reset">Enviar Formulario</button>
         </form>
         <p>&copy; 2025 GameZone. Todos los derechos reservados.</p>
     </footer>
