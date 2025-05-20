@@ -1,0 +1,104 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #00d2ff, #3a7bd5);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Contenedor principal del formulario */
+.form-container {
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 10px;
+    width: 350px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Título */
+.register-form h2 {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 30px;
+    color: #0a3d62;
+    font-weight: bold;
+}
+
+/* Etiquetas y campos */
+.register-form label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.register-form input {
+    width: 100%;
+    padding: 10px 8px;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 2px solid #00d2ff;
+    outline: none;
+    font-size: 14px;
+    color: #333;
+    transition: border-color 0.3s;
+}
+
+.register-form input:focus {
+    border-bottom-color: #3a7bd5;
+}
+
+/* Botón principal */
+.register-form button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(90deg, #00d2ff, #3a7bd5);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.register-form button[type="submit"]:hover {
+    background: linear-gradient(90deg, #3a7bd5, #00d2ff);
+}
+
+/* Texto inferior */
+.register-form .bottom-text {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 13px;
+    color: #666;
+}
+
+.register-form .bottom-text a {
+    color: #3a7bd5;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register-form .bottom-text a:hover {
+    text-decoration: underline;
+}
+
+/* Checkbox de términos (opcional) */
+.checkbox-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #555;
+}

@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+.from-container {
+ width: 350px;
+
+
+}
+
+.from-container h2 {
+    text-align: center;
+    color: #333;
+    height: 70px;
+
+}
+
+.register-form label {
+
+    display: block;
+    margin-top: 1.5rem;
+    margin-bottom: 0.2rem;
+    
+  
+}
+
+.register-form input[type="text"],
+.register-form input[type="email"],
+.register-form input[type="password"] {
+    width: 100%;
+    padding: 0.3rem;
+
+}
+
+.checkbox-box {
+    margin-top: 1rm;
+    color: #333;
+    height: 2.5rem;
+}
+
+.co {
+    color: rgb(96, 186, 238);
+}
+
+button {
+    color: white;
+    background-color: rgb(25, 98, 207);
+    width: 100%;
+    padding: 10px;
+    border: none;
+
+}
+
+p{
+margin-top: 20px;
+}
+.pe{
+   height: 2rem;
+    color: #636262;
+}
+.m{
+float: right;
+    color: rgb(96, 186, 238);
+}
+@media(min-width:768px) {
+    .from-container {
+        max-width: 800px;
+    }
+}

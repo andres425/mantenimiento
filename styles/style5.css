@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: linear-gradient(to right, red 50%, rgb(255, 255, 255) 50%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.from-container {
+    background-color: white;
+    height: 300px;
+    border-radius: 15px;
+    padding: 2rem;
+    width: 100%;
+    max-width: 340px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+    justify-content: center;
+    align-items: center;
+}
+
+.from-container h2 {
+    text-align: center;
+}
+
+.register-form {
+    align-items: center;
+
+}
+
+.entrada {
+    position: relative;
+    width: 100%;
+    padding: 2px 1opx 2px 0;
+    /* espacio para el ícono a la derecha */
+    border: none;
+    border-bottom: 1px solid #aaa;
+    outline: none;
+    font-size: 16px;
+
+}
+
+.icon {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    /* evita que el ícono bloquee el input */
+    color: #777;
+}
+
+.register-form label {
+    display: block;
+    margin-top: 0.2rem;
+    margin-bottom: 0.1rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.register-form input [type="text"],
+.register-form input [type="email"],
+.register-form input [type="password"] {
+    width: 100%;
+    padding: 0.3rem;
+    border-radius: 8px;
+    border: 1px solid #aaa;
+    transition: all 0.3s ease;
+}
+
+.checkbox-box {
+    margin-top: 1rem;
+    color: #333;
+}
+
+.chu {
+    width: 70%;
+    padding: 10px;
+    background-color: red;
+    color: white;
+    font-size: 1em;
+    border: none;
+    margin-top: 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+.boton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
